@@ -12,13 +12,13 @@ class ArchiveChannelBot(discord.Client):
     async def on_ready(self):
         guild = self.get_guild(GUILD_ID)
         if not guild:
-            print(f"Guild {GUILD_ID} not found")
+            print(f"Guild \"{GUILD_ID}\" not found")
             await self.close()
             return
 
         archive_category = await self.get_archive_category(guild)
         if not archive_category:
-            print(f"Archive category {ARCHIVE_CATEGORY_NAME} not found")
+            print(f"Archive category \"{ARCHIVE_CATEGORY_NAME}\" not found")
             await self.close()
             return
 
