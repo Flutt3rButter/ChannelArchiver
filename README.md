@@ -5,10 +5,8 @@ Simple Python script that moves Discord channels with no activity in the last N 
 ## Discord Bot
 
 Create a Discord bot and give it these permissions
-- View Channels
-- Read Message History
 - Manage Channels
-- Manage Categories
+- Read Message History
 
 ## Setup
 
