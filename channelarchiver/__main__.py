@@ -4,4 +4,4 @@ from config import BOT_TOKEN
 
 if __name__ == "__main__":
     bot = ArchiveChannelBot()
-    asyncio.run(bot.start(BOT_TOKEN))
+    bot.run(BOT_TOKEN, log_handler=None)
