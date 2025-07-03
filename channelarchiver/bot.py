@@ -1,6 +1,6 @@
 import discord
 from datetime import datetime, timedelta, timezone
-from .config import GUILD_ID, MONTHS_THRESHOLD, ARCHIVE_CATEGORY_NAME
+from config import GUILD_ID, MONTHS_THRESHOLD, ARCHIVE_CATEGORY_NAME
 
 class ArchiveChannelBot(discord.Client):
     def __init__(self):
@@ -45,7 +45,7 @@ class ArchiveChannelBot(discord.Client):
         for category in guild.categories:
             if category.name == ARCHIVE_CATEGORY_NAME:
                 return category
-            return None
+        return None
 
     async def get_last_message_date(self, channel):
         try:

@@ -1,7 +1,7 @@
 import asyncio
-from .bot import ChannelArchiveBot
-from .config import BOT_TOKEN
+from bot import ArchiveChannelBot
+from config import BOT_TOKEN
 
 if __name__ == "__main__":
-    bot = ChannelArchiveBot()
+    bot = ArchiveChannelBot()
     asyncio.run(bot.start(BOT_TOKEN))
